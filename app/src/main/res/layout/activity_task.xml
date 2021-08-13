@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            app:titleTextColor="#FFFFFF"
+            android:background="@color/cardview_dark_background"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_txt"/>
+
+                <EditText
+                    android:id="@+id/et_Task"
+                    android:layout_width="match_parent"
+                     android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Salvar_Task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_task_btn"
+                android:layout_marginTop="16dp"
+                android:onClick="onClickSalvarTask"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

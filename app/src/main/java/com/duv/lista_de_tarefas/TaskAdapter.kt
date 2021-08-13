@@ -24,9 +24,7 @@ class TaskAdapter(private val context: Context,
 
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = list.size
 
 }
 

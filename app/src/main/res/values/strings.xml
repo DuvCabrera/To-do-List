@@ -2,4 +2,6 @@
     <string name="app_name">Lista-de-tarefas</string>
     <string name="delete_button">Deletar</string>
     <string name="check_button">Concluir</string>
+    <string name="task_txt">Tarefa</string>
+    <string name="save_task_btn">Salvar Tarefa</string>
 </resources>
