@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista-de-tarefas</string>
+    <string name="delete_button">Deletar</string>
+    <string name="check_button">Concluir</string>
+</resources>
