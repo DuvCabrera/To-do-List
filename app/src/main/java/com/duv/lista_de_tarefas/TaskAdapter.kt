@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.duv.lista_de_tarefas.modelo.TaskMo
 
 class TaskAdapter(private val context: Context,
-                  private val list: List<TaskMo>): RecyclerView.Adapter<TaskViewHolder>(){
-
+                  private val list: List<TaskMo>
+): RecyclerView.Adapter<TaskViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.task_item, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.task_item, parent, false)
         return TaskViewHolder(view)
     }
 
@@ -21,7 +21,6 @@ class TaskAdapter(private val context: Context,
         val task = list[position]
         holder.taskTitle.text = task.task
         holder.checkBox.isChecked = false
-
     }
 
     override fun getItemCount(): Int = list.size
